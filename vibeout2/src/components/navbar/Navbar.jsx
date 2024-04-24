@@ -24,7 +24,7 @@ function Navbar() {
             Profile
           </a>
           <ul className="dropdown-menu">
-            <li><Link to="/profile"> My Profile </Link></li>
+            <li><Link to="/profile" className="dropdown-item" > My Profile </Link></li>
             <li><a className="dropdown-item" href="#"></a></li>
             <li><hr className="dropdown-divider"/></li>
             <li><a className="dropdown-item" href="#">Settings</a></li>
