@@ -42,7 +42,7 @@ function SubBar() {
 
   return (
     <div className='bar'>
-        <h3>Who to follow</h3>
+        <h3>Following</h3>
         <hr />
   {
      accounts.map((account, i) => {
@@ -53,18 +53,23 @@ function SubBar() {
             <button className='btn-unfollow' onClick={(e) => {unfollowNew(account._id)}}>Unfollow</button>
           </div>
         )
-      }
-      else {
-        return (
+      }})
+  }
+   <h3 className='sugg'><hr /> Who to follow</h3>
+   <hr />
+
+   { accounts.map((account, i) => {
+    if (account.following == false) {
+      return (
         <div key={i} className="account">
           <a href="#" className='acc'>{account.name}</a>
           <button className='follow' onClick={(e) => {follow(account._id)}}>Follow</button>
         </div>)
-      }
-      
-     })
-  }
-   
+    }
+   })
+
+   }
+
     </div>
   )
 }
