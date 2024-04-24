@@ -1,0 +1,53 @@
+GET http://localhost:3000/following
+###
+
+GET http://localhost:3000/following/66223385c98e97609381139b
+
+###
+
+POST http://localhost:3000/following
+Content-Type: application/json
+
+{
+    "name": "Kendrick",
+    "post": "I hate aubrey",
+    "pfp": "kendrick.jpg"
+}
+
+###
+
+DELETE http://localhost:3000/following/6628a63145b868241416fd26
+
+
+###
+
+GET http://localhost:3000/posts
+
+
+###
+
+
+GET http://localhost:3000/posts/662679ea14628088ce9e810b
+
+###
+
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+    "postBody": "My second Post"
+    
+}
+
+###
+
+DELETE http://localhost:3000/posts/662678d4b5cac98c84b489c5
+
+###
+
+PATCH http://localhost:3000/posts/662771204141c0b23100a009 
+Content-Type: application/json
+
+{
+    "postBody": " this was edited"
+}

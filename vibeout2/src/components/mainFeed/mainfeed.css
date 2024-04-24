@@ -1,0 +1,55 @@
+.feed {
+    background-color: rgb(48, 48, 48);
+    height: 750px auto;
+    width: 83%;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: white;
+    padding: 30px;
+}
+
+.latest {
+    margin-left:  30px;
+
+}
+
+
+.contentcard {
+    background-color: rgb(60, 60, 60);
+    height: auto;
+    width: 90%;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.feed-body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.content-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.content-text {
+    margin-left: 10px;
+    margin-top: 10px;
+   
+}
+
+a {
+    color: white;
+    
+}

@@ -1,0 +1,75 @@
+.prof-page {
+    background-color: rgb(48, 48, 48);
+    height: 100vh;
+    width: 83%;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: white;
+    padding: 30px;
+}
+
+.upload {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(61, 61, 61);
+    padding: 10px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+
+.upload input {
+    height: 40px;
+    width: 90%;
+}
+
+.upload button {
+    height: 40px;
+    width:10%;
+    border-color: green;
+    background: transparent;
+    background-color: greenyellow;
+}
+.upload button:hover {
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+}
+ 
+.file {
+    margin-top: 10px;
+}
+
+
+.timeline{
+    margin-top: 15px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    background-color: (61, 61, 61);
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+
+.delete {
+    background: transparent;
+    color: red;
+    border: 2px solid red;
+    border-radius: 5px; 
+}
+
+.delete:hover {
+    background-color: red;
+    color: white;
+}
+
+.edit {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.edit:hover {
+    background-color: rgb(85, 85, 255);
+    color: white;
+}
