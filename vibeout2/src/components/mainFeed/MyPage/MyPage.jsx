@@ -10,7 +10,7 @@ function MyPage() {
   const [posts, setPosts] = useState([{}]);
   const [postEdit, setPostEdit] = useState("")
 
-  const url = "http://localhost:3000/posts";
+  const url = "https://final-capstone-c8y0.onrender.com/posts";
 
 
   // API
@@ -38,19 +38,6 @@ function MyPage() {
     }
   };
 
-  //  Update
-  const update = async (_id) => {
-
-const submitEdit = async () => {
- await axios.patch("http://localhost:3000/posts/"+_id)
-  postEdit
-   
-}
-
-    return 
-  }
-
-
   // delete
   const deletePost = async (_id) => {
     try {
@@ -60,6 +47,8 @@ const submitEdit = async () => {
 
     } catch (error) {res.json({ message: error.message })}
   };
+
+
 
   return (
     <>

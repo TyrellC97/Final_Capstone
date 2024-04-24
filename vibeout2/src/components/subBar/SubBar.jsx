@@ -5,7 +5,7 @@ import axios from 'axios'
 function SubBar() {
   const [accounts, setAccounts] = useState([]) 
 
-  const url = "http://localhost:3000/following"
+  const url = "https://final-capstone-c8y0.onrender.com/following"
 
   useEffect(() => {
    const getAccounts = async () => {
@@ -21,6 +21,9 @@ function SubBar() {
   
   }, [accounts])
 
+
+  // update
+
   const unfollowNew = (id) => {
      axios.put("http://localhost:3000/following/"+id).then(results => console.log(results)).catch(err=> console.log(err))
 
@@ -31,14 +34,7 @@ function SubBar() {
 
     axios.patch("http://localhost:3000/following/"+id).then(results => console.log(results)).catch(err=> console.log(err))
   }
-  const unfollow = async (_id) => {
-    try {
-      await axios.delete("http://localhost:3000/following/"+_id)
-      alert("Unfollowed") 
-
-
-    } catch (error) {res.json({ message: error.message })}
-  };
+  
 
   return (
     <div className='bar'>
