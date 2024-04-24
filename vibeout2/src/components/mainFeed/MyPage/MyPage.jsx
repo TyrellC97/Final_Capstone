@@ -28,7 +28,7 @@ function MyPage() {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:3000/posts", {
+      await axios.post("https://final-capstone-c8y0.onrender.com/posts", {
         postBody,
       });
       
@@ -41,7 +41,7 @@ function MyPage() {
   // delete
   const deletePost = async (_id) => {
     try {
-      await axios.delete("http://localhost:3000/posts/"+_id)
+      await axios.delete("https://final-capstone-c8y0.onrender.com/posts"+_id)
       alert("Are you sure you want to delete this post?") 
 
 

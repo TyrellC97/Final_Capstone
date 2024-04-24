@@ -25,14 +25,14 @@ function SubBar() {
   // update
 
   const unfollowNew = (id) => {
-     axios.put("http://localhost:3000/following/"+id).then(results => console.log(results)).catch(err=> console.log(err))
+     axios.put("https://final-capstone-c8y0.onrender.com/following"+id).then(results => console.log(results)).catch(err=> console.log(err))
 
      const btn = document.getElementsByClassName("btn-unfollow")
   }
 
   const follow = (id) =>{
 
-    axios.patch("http://localhost:3000/following/"+id).then(results => console.log(results)).catch(err=> console.log(err))
+    axios.patch("https://final-capstone-c8y0.onrender.com/following"+id).then(results => console.log(results)).catch(err=> console.log(err))
   }
   
 
