@@ -10,7 +10,7 @@ function MyPage() {
   const [posts, setPosts] = useState([{}]);
   const [postEdit, setPostEdit] = useState("")
 
-  const url = "https://final-capstone-c8y0.onrender.com/posts";
+  const url = "https://final-capstone-c8y0.onrender.com/posts/";
 
 
   // API
@@ -28,7 +28,7 @@ function MyPage() {
     e.preventDefault();
 
     try {
-      await axios.post("https://final-capstone-c8y0.onrender.com/posts", {
+      await axios.post("https://final-capstone-c8y0.onrender.com/posts/", {
         postBody,
       });
       
@@ -41,7 +41,7 @@ function MyPage() {
   // delete
   const deletePost = async (_id) => {
     try {
-      await axios.delete("https://final-capstone-c8y0.onrender.com/posts"+_id)
+      await axios.delete("https://final-capstone-c8y0.onrender.com/posts/"+_id)
       alert("Are you sure you want to delete this post?") 
 
 

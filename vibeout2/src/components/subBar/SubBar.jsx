@@ -5,7 +5,7 @@ import axios from 'axios'
 function SubBar() {
   const [accounts, setAccounts] = useState([]) 
 
-  const url = "https://final-capstone-c8y0.onrender.com/following"
+  const url = "https://final-capstone-c8y0.onrender.com/following/"
 
   useEffect(() => {
    const getAccounts = async () => {
@@ -25,14 +25,13 @@ function SubBar() {
   // update
 
   const unfollowNew = (_id) => {
-     axios.put("https://final-capstone-c8y0.onrender.com/following"+_id).then(results => console.log(results)).catch(err=> console.log(err))
+     axios.put(url + _id).then(results => console.log(results)).catch(err=> console.log(err))
 
-     const btn = document.getElementsByClassName("btn-unfollow")
   }
 
   const follow = (_id) =>{
 
-    axios.patch("https://final-capstone-c8y0.onrender.com/following"+_id).then(results => console.log(results)).catch(err=> console.log(err))
+    axios.patch(url + _id).then(results => console.log(results)).catch(err=> console.log(err))
   }
   
 
