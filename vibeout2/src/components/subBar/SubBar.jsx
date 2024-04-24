@@ -24,15 +24,15 @@ function SubBar() {
 
   // update
 
-  const unfollowNew = (id) => {
-     axios.put("https://final-capstone-c8y0.onrender.com/following"+id).then(results => console.log(results)).catch(err=> console.log(err))
+  const unfollowNew = (_id) => {
+     axios.put("https://final-capstone-c8y0.onrender.com/following"+_id).then(results => console.log(results)).catch(err=> console.log(err))
 
      const btn = document.getElementsByClassName("btn-unfollow")
   }
 
-  const follow = (id) =>{
+  const follow = (_id) =>{
 
-    axios.patch("https://final-capstone-c8y0.onrender.com/following"+id).then(results => console.log(results)).catch(err=> console.log(err))
+    axios.patch("https://final-capstone-c8y0.onrender.com/following"+_id).then(results => console.log(results)).catch(err=> console.log(err))
   }
   
 
