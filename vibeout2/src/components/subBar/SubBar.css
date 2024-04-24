@@ -40,6 +40,19 @@
     color: white;
 }
 
+.follow {
+    background: transparent;
+    color: rgb(0, 140, 255) ;
+    border-color: rgb(0, 140, 255) ;
+    font-size: small;
+    border-radius: 5px;
+}
+
+.follow:hover {   
+    background-color: rgb(0, 140, 255);
+    color: white;
+}
+
 .account:hover {
     border-left: 1px solid white;
     background-color: gray;

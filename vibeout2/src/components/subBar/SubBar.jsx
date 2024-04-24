@@ -24,6 +24,7 @@ function SubBar() {
   const unfollowNew = (id) => {
      axios.put("http://localhost:3000/following/"+id).then(results => console.log(results)).catch(err=> console.log(err))
 
+     const btn = document.getElementsByClassName("btn-unfollow")
   }
 
   const follow = (id) =>{
@@ -41,20 +42,28 @@ function SubBar() {
 
   return (
     <div className='bar'>
-        <h3>Following</h3>
+        <h3>Who to follow</h3>
         <hr />
   {
      accounts.map((account, i) => {
-      return (
+      if (account.following == true) {
+        return (
+          <div key={i} className="account">
+            <a href="#" className='acc'>{account.name}</a>
+            <button className='btn-unfollow' onClick={(e) => {unfollowNew(account._id)}}>Unfollow</button>
+          </div>
+        )
+      }
+      else {
+        return (
         <div key={i} className="account">
           <a href="#" className='acc'>{account.name}</a>
-          <button className='btn-unfollow'onClick={(e) => {unfollowNew(account._id)}}>Unfollow</button>
-        </div>
-      )
+          <button className='follow' onClick={(e) => {follow(account._id)}}>Follow</button>
+        </div>)
+      }
+      
      })
   }
-    <h3 className='sugg' >Suggested users</h3>
-    <hr />
    
     </div>
   )
